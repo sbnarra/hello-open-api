@@ -1,0 +1,18 @@
+openapi: "3.0.0"
+info:
+  title: Person API
+  version: 0.0.0
+paths:
+  /persons:
+    get:
+      operationId: getPersons
+      responses:
+        200:
+          description: list of persons
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
